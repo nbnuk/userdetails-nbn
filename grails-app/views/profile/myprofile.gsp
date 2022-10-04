@@ -105,7 +105,7 @@
 %{--            </g:else>--}%
 %{--        </div>--}%
 %{--        </g:if>--}%
-        <g:if test="${Holders.config.getProperty('oauth.providers.inaturalist.enabled', Boolean, false)}">
+        %{--<g:if test="${Holders.config.getProperty('oauth.providers.inaturalist.enabled', Boolean, false)}">
         <div class="well well-small">
             <h4>${grailsApplication.config.inaturalist.name}</h4>
             <g:if test="${props.inaturalistId}">
@@ -129,7 +129,7 @@
                 </span>
             </g:else>
         </div>
-        </g:if>
+        </g:if>--}%
     </div>
 </div>
 </body>
