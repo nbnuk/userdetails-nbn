@@ -64,7 +64,7 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 }
 jmxConfigurator()
 
-root(TRACE, [TOMCAT_LOG])
+root(INFO, [TOMCAT_LOG])
 [
     (OFF): [],
     (ERROR): [
