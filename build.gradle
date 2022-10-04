@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-version "0.0.1"
+version "0.0.2-SNAPSHOT"
 group "uk.org.nbn"
 
 apply plugin:"eclipse"
@@ -19,6 +19,8 @@ apply plugin:"war"
 apply plugin:"org.grails.grails-web"
 apply plugin:"asset-pipeline"
 apply plugin:"org.grails.grails-gsp"
+
+apply from: 'https://raw.githubusercontent.com/nbnuk/travis-build-configuration/master/travis_grails_publish.gradle'
 
 repositories {
     mavenLocal()
