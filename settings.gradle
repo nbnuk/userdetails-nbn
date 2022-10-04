@@ -1,0 +1,6 @@
+boolean inplace = true
+
+if (inplace) {
+    include ':userdetails'
+    project(':userdetails').projectDir = new File(settingsDir,'../userdetails')
+}
