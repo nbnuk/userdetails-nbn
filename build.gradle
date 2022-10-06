@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-version "0.0.2-SNAPSHOT"
+version "0.0.3-SNAPSHOT"
 group "uk.org.nbn"
 
 apply plugin:"eclipse"
@@ -47,7 +47,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-autoconfigure"
     compile "org.grails:grails-core"
     compile "org.springframework.boot:spring-boot-starter-actuator"
-    profile "org.springframework.boot:spring-boot-starter-tomcat"
+    provided "org.springframework.boot:spring-boot-starter-tomcat"
     compile "org.grails:grails-web-boot"
     compile "org.grails:grails-logging"
     compile "org.grails:grails-plugin-rest"
@@ -94,6 +94,12 @@ bootRun {
     addResources = true
     String springProfilesActive = 'spring.profiles.active'
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
+}
+
+bootRepackage {
+    enabled = true
+    executable = true
+    classifier = 'exec'
 }
 
 tasks.withType(Test) {
