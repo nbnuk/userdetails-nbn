@@ -25,11 +25,11 @@
 %{--                     <g:message code="myprofile.your.timeline" />--}%
 %{--                </a>--}%
 %{--            </li>--}%
-            <li>
-                <a href="${grailsApplication.config.spatial.url}">
-                    <g:message code="myprofile.spatial.portal" />
-                </a>
-            </li>
+%{--            <li>--}%
+%{--                <a href="${grailsApplication.config.spatial.url}">--}%
+%{--                    <g:message code="myprofile.spatial.portal" />--}%
+%{--                </a>--}%
+%{--            </li>--}%
 %{--            <li>--}%
 %{--                <a href="${grailsApplication.config.volunteer.url}">--}%
 %{--                    <g:message code="myprofile.tasks.digivol" />--}%
@@ -45,16 +45,16 @@
                     <g:message code="myprofile.view.records.you.annotated" />
                 </a>
             </li>
-            <li>
-                <a href="${grailsApplication.config.biocache.myDownloads.url}">
-                    <g:message code="myprofile.your.downloads" />
-                </a>
-            </li>
-            <li>
-                <a href="${grailsApplication.config.myData.url}">
-                    <g:message code="myprofile.your.datasets" />
-                </a>
-            </li>
+%{--            <li>--}%
+%{--                <a href="${grailsApplication.config.biocache.myDownloads.url}">--}%
+%{--                    <g:message code="myprofile.your.downloads" />--}%
+%{--                </a>--}%
+%{--            </li>--}%
+%{--            <li>--}%
+%{--                <a href="${grailsApplication.config.myData.url}">--}%
+%{--                    <g:message code="myprofile.your.datasets" />--}%
+%{--                </a>--}%
+%{--            </li>--}%
             <li>
                 <a href="${grailsApplication.config.alerts.url}">
                     <g:message code="myprofile.your.alerts" />
