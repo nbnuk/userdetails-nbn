@@ -69,8 +69,8 @@
                     <ul>
                     <li><g:message code="create.account.motivation.1" />
                     <li><g:message code="create.account.motivation.2" />
-                    <li><g:message code="create.account.motivation.3" />
-                    <li><g:message code="create.account.motivation.4" />
+%{--                    <li><g:message code="create.account.motivation.3" />--}%
+%{--                    <li><g:message code="create.account.motivation.4" />--}%
                     </ul>
                     <p><g:message code="create.account.motivation.footer" />
                 </g:if>
