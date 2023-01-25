@@ -25,6 +25,7 @@
 
         <g:if test="${grailsApplication.config.getProperty('attributes.affiliations.enabled', Boolean, false)}">
             <div class="form-group">
+                <label for="affiliation"><g:message code="create.account.affiliation" default="What is your primary affiliation?" /> *</label>
                 <g:select id="affiliation" name="affiliation"
                           class="form-control"
                           value="${props?.affiliation}"
