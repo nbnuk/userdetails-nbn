@@ -66,7 +66,7 @@
                                             <g:message code="myprofile.admin.tools" />
                                         </g:link>
                                     </h4>
-                                    <p><g:message code="myprofile.admin.tools" /></p>
+                                    <p class="my-profile-content-paragraph"><g:message code="myprofile.admin.tools" /></p>
                                 </div>
                             </div>
                         </g:if>
