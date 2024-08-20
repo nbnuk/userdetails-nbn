@@ -55,7 +55,7 @@
                             </div>
                         </div>
 
-                        <g:if test="${isAdmin || isBiosecurityAdmin}">
+                        <g:if test="${isAdmin}">
                             <div class="d-flex">
                                 <div class="image" style="font-size: 2em;">
                                     <i class="glyphicon glyphicon-cog"></i>
@@ -83,7 +83,7 @@
                             </div>
                             <div class="content my-profile-section-content">
                                 <h4 id="species-lists" class="my-profile-sub-header">
-                                    <a href="${grailsApplication.config.getProperty('lists.url')}">
+                                    <a href="${grailsApplication.config.lists.url}">
                                         <g:message code="myprofile.uploaded.species.lists" />
                                     </a>
                                 </h4>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="content my-profile-section-content">
                                 <h4 id="records-annotated" class="my-profile-sub-header" >
-                                    <a href="${grailsApplication.config.getProperty('biocache.search.url')}%22${user.id}%22">
+                                    <a href="${grailsApplication.config.biocache.search.url}%22${user.id}%22">
                                         <g:message code="myprofile.view.records.you.annotated" />
                                     </a>
                                 </h4>
@@ -118,7 +118,7 @@
                             </div>
                             <div class="content my-profile-section-content">
                                 <h4 id="my-alerts" class="my-profile-sub-header">
-                                    <a href="${grailsApplication.config.getProperty('alerts.url')}">
+                                    <a href="${grailsApplication.config.alerts.url}">
                                         <g:message code="myprofile.your.alerts" />
                                     </a>
                                 </h4>
@@ -129,23 +129,23 @@
                 </div>
             </div>
     
-            <div id="external-linkages" class="row">
-    
-                <g:if test="${Holders.config.getProperty('oauth.providers.inaturalist.enabled', Boolean, false)}">
-                    <div class="col-lg-6">
-                        <div class=" well well-small">
-                            <div class="d-flex">
-                                <div class="image">
-                                    <img src="${grailsApplication.config.getProperty('logo.inaturalist')}">
-                                </div>
-                                <div class="content">
-                                    <h4>${grailsApplication.config.getProperty('inaturalist.name')}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </g:if>
-            </div>
+%{--            <div id="external-linkages" class="row">--}%
+%{--    --}%
+%{--                <g:if test="${Holders.config.getProperty('oauth.providers.inaturalist.enabled', Boolean, false)}">--}%
+%{--                    <div class="col-lg-6">--}%
+%{--                        <div class=" well well-small">--}%
+%{--                            <div class="d-flex">--}%
+%{--                                <div class="image">--}%
+%{--                                    <img src="${grailsApplication.config.getProperty('logo.inaturalist')}">--}%
+%{--                                </div>--}%
+%{--                                <div class="content">--}%
+%{--                                    <h4>${grailsApplication.config.getProperty('inaturalist.name')}</h4>--}%
+%{--                                </div>--}%
+%{--                            </div>--}%
+%{--                        </div>--}%
+%{--                    </div>--}%
+%{--                </g:if>--}%
+%{--            </div>--}%
         </div>
     </body>
 </html>
