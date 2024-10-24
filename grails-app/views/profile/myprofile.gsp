@@ -71,7 +71,7 @@
                             </div>
                         </g:if>
                     </div>
-    
+
                     <!-- Column 2 -->
                     <div class="col-lg-4">
 
@@ -107,7 +107,7 @@
                         </div>
 
                     </div>
-    
+
                     <!-- Column 3 -->
                     <div class="col-lg-4">
 
@@ -125,10 +125,27 @@
                                 <p class="my-profile-content-paragraph"><g:message code="myprofile.your.alerts.content" /></p>
                             </div>
                         </div>
+
+                    <!-- Manage Saved Searches -->
+                    <div class="my-profile-floating-div">
+                        <div class="image my-profile-icon">
+                            <i class="fa fa-tags"></i>
+                        </div>
+                        <div class="content my-profile-section-content">
+                            <h4 id="my-saved-searches" class="my-profile-sub-header">
+                                <a href="${grailsApplication.config.alerts.url}">
+                                    <g:message code="myprofile.your.saved.searches" />
+                                </a>
+                            </h4>
+                            <p class="my-profile-content-paragraph"><g:message code="myprofile.your.saved.searches.content" /></p>
+                        </div>
+                    </div>
+
+
                     </div>
                 </div>
             </div>
-    
+
 %{--            <div id="external-linkages" class="row">--}%
 %{--    --}%
 %{--                <g:if test="${Holders.config.getProperty('oauth.providers.inaturalist.enabled', Boolean, false)}">--}%
