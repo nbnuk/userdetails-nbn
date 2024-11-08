@@ -133,7 +133,7 @@
                         </div>
                         <div class="content my-profile-section-content">
                             <h4 id="my-saved-searches" class="my-profile-sub-header">
-                                <a href="${grailsApplication.config.alerts.url}/savedSearches/mySavedSearches">
+                                <a href="${grailsApplication.config.alerts.url}/savedSearch/mySavedSearches">
                                     <g:message code="myprofile.your.saved.searches" />
                                 </a>
                             </h4>
