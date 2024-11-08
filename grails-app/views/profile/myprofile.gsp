@@ -56,12 +56,12 @@
                         </div>
 
                         <g:if test="${isAdmin}">
-                            <div class="d-flex">
-                                <div class="image" style="font-size: 2em;">
+                            <div class="my-profile-floating-div">
+                                <div class="image my-profile-icon">
                                     <i class="glyphicon glyphicon-cog"></i>
                                 </div>
-                                <div class="content">
-                                    <h4 id="admin-tools">
+                                <div class="content my-profile-section-content">
+                                    <h4 id="admin-tools" class="my-profile-sub-header">
                                         <g:link controller="admin">
                                             <g:message code="myprofile.admin.tools" />
                                         </g:link>
@@ -133,7 +133,7 @@
                         </div>
                         <div class="content my-profile-section-content">
                             <h4 id="my-saved-searches" class="my-profile-sub-header">
-                                <a href="${grailsApplication.config.alerts.url}">
+                                <a href="${grailsApplication.config.alerts.url}/savedSearches/mySavedSearches">
                                     <g:message code="myprofile.your.saved.searches" />
                                 </a>
                             </h4>
