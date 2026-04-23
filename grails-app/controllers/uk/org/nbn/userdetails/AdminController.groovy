@@ -10,7 +10,7 @@ class AdminController extends au.org.ala.userdetails.AdminController{
     def webservices() {}
 
     def surveyResults() {
-        def results = userService.countByProfileAttribute('userType', null, request.locale)
+        def results = userService.countByProfileAttribute('userType', null, null, request.locale)
         def csvWriter = new CSVWriterBuilder(response.writer)
                 .withParser(new RFC4180ParserBuilder().build())
                 .build()
