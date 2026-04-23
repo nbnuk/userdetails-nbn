@@ -125,6 +125,12 @@ bootRun {
     systemProperty springProfilesActive, System.getProperty(springProfilesActive)
 }
 
+bootRepackage {
+    enabled = true
+    executable = true
+    classifier = 'exec'
+}
+
 tasks.withType(GroovyCompile) {
     configure(groovyOptions) {
         forkOptions.jvmArgs = ['-Xmx1024m']
