@@ -157,7 +157,7 @@ publishing {
     }
     publications {
         mavenJar(MavenPublication) {
-            from components.web
+            from components.java
         }
     }
 }
